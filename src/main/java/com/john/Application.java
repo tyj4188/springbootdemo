@@ -11,13 +11,15 @@ package com.john;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @author ihui
  * @date 2017/11/1
  */
 @SpringBootApplication // 等同于@Configuration @EnableAutoConfiguration @ComponentScan
-@EnableCaching
+@EnableCaching // 使用缓存
+@EnableDiscoveryClient
 public class Application {
 
     public static void main(String[] args) {

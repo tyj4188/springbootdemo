@@ -9,9 +9,9 @@
   <url>http://maven.apache.org</url>
 
   <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.5.8.RELEASE</version>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-parent</artifactId>
+    <version>Camden.SR7</version>
   </parent>
 
   <dependencies>
@@ -46,10 +46,22 @@
       <version>1.4.2.RELEASE</version>
     </dependency>
 
-    <!-- Springboot 监控, 访问 /health -->
+    <!-- Spring boot 监控, 访问 /health -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+
+    <!-- spring cloud 注册服务 -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-eureka</artifactId>
+    </dependency>
+
+    <!-- spring cloud 路由 -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-hystrix</artifactId>
     </dependency>
 
     <!-- Session 共享 -->
