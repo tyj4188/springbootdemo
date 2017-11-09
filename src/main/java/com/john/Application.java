@@ -19,7 +19,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @SpringBootApplication // 等同于@Configuration @EnableAutoConfiguration @ComponentScan
 @EnableCaching // 使用缓存
-@EnableEurekaClient
+@EnableEurekaClient // Eureka 客户端
 public class Application {
 
     public static void main(String[] args) {
